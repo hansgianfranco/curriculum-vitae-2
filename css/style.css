@@ -15,6 +15,9 @@
            padding-bottom: 80px;
            position: relative;
        }
+img{
+    max-width: 100%;
+}
        
 main h3{
     color:#36bfc8;
