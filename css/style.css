@@ -1,141 +1,184 @@
 @import url(https://fonts.googleapis.com/css?family=Open+Sans:400,300,300italic,400italic,800,700italic,700,600,600italic,800italic);
-
 * {
-           /*  outline: 1px dashed rgba(226, 60, 60, 0.58);*/
-       }
-       
-       body {
-            font-family:'Open Sans',Hevaltica;
-       }
-       
-       header {
-           background-color: #36bfc8;
-           color: #fff;
-           padding-top: 80px;
-           padding-bottom: 80px;
-           position: relative;
-       }
-img{
+  outline: 1px dashed rgba(226, 60, 60, 0.58);
+}
+
+body {
+    font-family: 'Open Sans', Hevaltica;
+}
+
+header {
+    background-color: #30ABD5;
+    color: #fff;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+
+img {
     max-width: 100%;
 }
-       
-main h3{
-    color:#36bfc8;
+
+main h3 {
+    color: #30ABD5;
     font-weight: 100;
 }
-       .name {
-           margin: 0;
-           font-size: 60px;
-           font-weight: 100;
-       }
-       
-       .job {
-           font-size: 24px;
-           font-weight: 100;
-           margin-bottom: 60px
-}
-       
-       .name,
-       .job,
-       .information,
-       .contact {
-           text-align: center;
-           text-transform: uppercase;
-       }
-       
-       .information ul,
-.contact ul{
-           padding:0;    list-style: none;
-       }
-       
 
-       
-       .imac {
-           max-width: 327px;
-           display: block;
-           margin: 10px auto;
-           position: relative;
-       }
-       
-       .monitor {
-           width: 327px!important;
-           height: 220px!important;
-           background-color: #EDF0F1;
-           display: block;
-           border-radius: 8px;
-           position: relative;
-           margin: 0;
-           z-index: 3;
-       }
-       
-       .screen {
-           display: block;
-           border: 12px solid #13202C;
-           border-radius: 8px 8px 0px 0px;
-           background-color: #EDF0F1;
-           position: relative;
-           width: 327px;
-           height: 185px;
-           color: #333;
-       }
-       
-       .button {
-           width: 15px!important;
-           height: 15px!important;
-           display: block;
-           border-radius: 10px!important;
-           background-color: #13202C!important;
-           position: absolute;
-           bottom: 10px;
-           left: 0;
-           right: 0;
-           margin: auto;
-       }
-    .base{
-        display: block;
-        height: 50px;
-        position: relative;
-               display: block;
+.name {
+    margin: 0;
+    font-size: 60px;
+    font-weight: 100;
+}
+
+.job {
+    font-size: 24px;
+    font-weight: 100;
+    margin-bottom: 60px
+}
+
+.name,
+.job,
+.information,
+.contact {
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.information ul,
+.contact ul {
+    padding: 0;
+    list-style: none;
+}
+
+.imac {
+    max-width: 327px;
+    display: block;
+    margin: 10px auto;
+    position: relative;
+}
+
+.monitor {
+    width: 327px!important;
+    height: 220px!important;
+    background-color: #EDF0F1;
+    display: block;
+    border-radius: 8px;
+    position: relative;
+    margin: 0;
+    z-index: 3;
+}
+
+.screen {
+    display: block;
+    border: 12px solid #13202C;
+    border-radius: 8px 8px 0px 0px;
+    background-color: #EDF0F1;
+    position: relative;
+    width: 327px;
+    height: 185px;
+    color: #333;
+}
+
+.button {
+    width: 15px!important;
+    height: 15px!important;
+    display: block;
+    border-radius: 10px!important;
+    background-color: #13202C!important;
+    position: absolute;
+    bottom: 10px;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+
+.base {
+    display: block;
+    height: 50px;
+    position: relative;
+    display: block;
+}
+
+.base-top {
+    border-bottom: 40px solid #BDC2C7;
+    border-left: 4px solid transparent;
+    border-right: 4px solid transparent;
+    width: 85px;
+    margin: auto;
+}
+
+.base-bottom {
+    border-bottom: 12px solid #BDC2C7;
+    border-left: 18px solid transparent;
+    border-right: 18px solid transparent;
+    border-radius: 40px;
+    width: 120px;
+    height: 12px;
+    display: block;
+    margin: auto;
+}
+
+main {
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
+
+.education-year {
+	width: 100px;
+	height: 100px;
+	background-color: #30ABD5;
+	position: relative;
+    text-align: center;
+    color: #fff;
+    vertical-align: middle;
+    display: table-cell;
+}
+.education-year:after,
+.education-year:before{
+    content: "";
+	position: absolute;
+	border-left: 29px solid #fff;
+	border-right: 29px solid #fff;
+	width: 42px;
+	height: 0;
+    box-sizing: content-box;
+}
+.education-year:before {
+	border-bottom: 29px solid #30ABD5;
+	top: 0;
+	left: 0;
+	
+}
+
+.education-year:after {
+	bottom: 0;
+	left: 0;
+	border-top: 29px solid #30ABD5;
+}
+
+.education-element{
+    display: block;
+}
+.education-year,.education-body{
+    display: table-cell;
+}
+.education-body{
+    vertical-align: middle;
+    padding: 10px 20px;
+}
+
+@media screen and (min-width:992px) {
+    .information {
+        text-align: left;
     }
-
-       .base-top {
-           border-bottom: 40px solid #BDC2C7;
-           border-left: 4px solid transparent;
-           border-right: 4px solid transparent;
-           width: 85px;
-           margin: auto;
-       }
-       
-       .base-bottom {
-           border-bottom: 12px solid #BDC2C7;
-           border-left: 18px solid transparent;
-           border-right: 18px solid transparent;
-           border-radius: 40px;
-           width: 120px;
-           height: 12px;
-           display: block;
-           margin: auto;
-       }
-
-main{
-     padding-top: 40px;
-           padding-bottom: 40px;
-}
-
-@media screen and (min-width:992px){
-           .information {
-           text-align: left;
-       }
-       
-       .contact {
-           text-align: right;
-       }
-    
-    .imac{
+    .contact {
+        text-align: right;
+    }
+    .imac {
         position: absolute;
-           bottom:-40px;
-           left: 0;
-           right: 0;
+        bottom: -40px;
+        left: 0;
+        right: 0;
     }
-    
 }
